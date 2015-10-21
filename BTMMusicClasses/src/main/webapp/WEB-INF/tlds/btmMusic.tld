@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name />
+	<uri>http://manish.javadev.com/tags</uri>
+	
+	<tag>
+		<name>validateSession</name>
+		<tag-class>com.manish.javadev.btm.music.tags.ValidateSessionTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+</taglib>
