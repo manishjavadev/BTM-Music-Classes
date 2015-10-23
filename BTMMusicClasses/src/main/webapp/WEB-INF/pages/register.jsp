@@ -62,23 +62,56 @@
 							</label>
 						</div>
 					</div>
-
+				</div>
+				<div class="col-lg-6">
+					<div class="well well-sm">
+						<strong><span class="glyphicon glyphicon success"></span>Enter Address Detail</strong>
+					</div>
+					<div class="form-group">
+						<label for="userName">Address Line1</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="addressLine1"
+								id="addressLine1" placeholder="Address Line1" required>
+							<span class="input-group-addon"><span
+								class="glyphicon glyphicon-asterisk"></span></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="userName">Address Line2</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="addressLine2"
+								id="addressLine2" placeholder="Address Line2" required>
+							<span class="input-group-addon"><span
+								class="glyphicon glyphicon-asterisk"></span></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="userName">City</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="city"
+								id="city" placeholder="City" required> <span
+								class="input-group-addon"><span
+								class="glyphicon glyphicon-asterisk"></span></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="userName">Pin</label>
+						<div class="input-group">
+							<input type="text" class="form-control" name="pin"
+								id="pin" placeholder="Pin" required> <span
+								class="input-group-addon"><span
+								class="glyphicon glyphicon-asterisk"></span></span>
+						</div>
+					</div>
+				</div>
+				<div>
 					<input type="submit" name="submit" id="submit" value="Submit"
 						class="btn btn-info pull-right">
+
 				</div>
+
 			</form>
-			<div class="col-lg-5 col-md-push-1">
-				<div class="col-md-12">
-					<div class="alert alert-success">
-						<strong><span class="glyphicon glyphicon-ok"></span>
-							Success! Message sent.</strong>
-					</div>
-					<div class="alert alert-danger">
-						<span class="glyphicon glyphicon-remove"></span><strong>
-							Error! Please check all page inputs.</strong>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</div>
 	<!-- Registration form - END -->

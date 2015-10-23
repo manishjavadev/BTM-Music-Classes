@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.manish.javadev.model.Customer;
+import com.manish.javadev.model.Student;
+import com.manish.javadev.model.WeekdayStudent;
 import com.manish.javadev.service.StudentService;
+import com.manish.javadev.to.StudentTo;
 import com.manish.javadev.to.UserTo;
 
 @Controller
@@ -126,10 +128,13 @@ public class BTMMusicController {
 	@RequestMapping(value = "/register.htm", method = RequestMethod.POST)
 	public ModelAndView userRegister() {
 		ModelAndView model = new ModelAndView("index");
-		Customer cust= new Customer("Manish","Srivastava",28,"Lucknow");
-		
-		studentService.addStudent(cust);
-		
+		StudentTo sto = new StudentTo();
+		// Adding one Student
+		WeekdayStudent weekdayStudent = new WeekdayStudent("Manish",
+				"BLR", "4.30PM", "Guitar", "MCA");
+
+		sto.setWeekdayStudent(weekdayStudent);
+		studentService.addStudent(sto);
 		return model;
 	}
 
