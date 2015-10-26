@@ -6,7 +6,8 @@
 	<div class="container">
 		<div class="center wow fadeInDown">
 			<h2>
-				<span style="color: #FF1493"><em>BTM Music Class Registration</em></span>
+				<span style="color: #FF1493"><em>BTM Music Class
+						Registration</em></span>
 			</h2>
 		</div>
 		<div class="row">
@@ -56,18 +57,18 @@
 						<label for="confirmEmail">Course Type</label>
 						<div class="input-group">
 							<label class="checkbox-inline"><input type="checkbox"
-								value="">Guitar</label> <label class="checkbox-inline"><input
-								type="checkbox" value="">Violin</label> <label
-								class="checkbox-inline"><input type="checkbox" value="">Piano</label>
+								value="" name="courseType">Guitar</label> <label class="checkbox-inline"><input
+								type="checkbox" value="" name="courseType">Violin</label> <label
+								class="checkbox-inline"><input type="checkbox" value="" name="courseType">Piano</label>
 						</div>
 					</div>
 					<div class="form-group">
 						<label for="confirmEmail">Batch Type</label>
 						<div class="input-group">
 							<label class="radio-inline"> <input type="radio"
-								name="optradio">Weekdays
+								name="batchType">Weekdays
 							</label> <label class="radio-inline"> <input type="radio"
-								name="optradio">Weekend
+								name="batchType">Weekend
 							</label>
 						</div>
 					</div>
@@ -86,12 +87,6 @@
 					<img src="images/slider/Guitar.jpg" class="img-responsive">
 				</div>
 			</div>
-
-
-
-
-
-
 		</div>
 	</div>
 	<!-- Registration form - END -->

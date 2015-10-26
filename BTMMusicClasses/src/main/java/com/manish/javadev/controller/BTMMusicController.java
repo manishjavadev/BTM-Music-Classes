@@ -1,5 +1,7 @@
 package com.manish.javadev.controller;
 
+import java.util.Arrays;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -94,7 +96,23 @@ public class BTMMusicController {
 	}
 
 	@RequestMapping(value = "/register.htm", method = RequestMethod.GET)
-	public ModelAndView registerUser() {
+	public ModelAndView registerUser(HttpServletRequest request) {
+		String name = null;
+		String email = null;
+		String reEmail = null;
+		String mobile = null;
+		String[] courseType = null;
+		String batchType = null;
+		name = request.getParameter("userName");
+		email = request.getParameter("userEmail");
+		reEmail = request.getParameter("confirmEmail");
+		mobile = request.getParameter("mobileNumber");
+		courseType = request.getParameterValues("courseType");
+		batchType = request.getParameter("batchType");
+
+		System.out.println("name" + name + "email = " + email + "reEmail = "
+				+ reEmail + "mobile = " + mobile + "course Type = "
+				+ Arrays.toString(courseType) + "batch type = " + batchType);
 
 		ModelAndView model = new ModelAndView("registerHelper");
 		return model;
@@ -126,15 +144,34 @@ public class BTMMusicController {
 	}
 
 	@RequestMapping(value = "/register.htm", method = RequestMethod.POST)
-	public ModelAndView userRegister() {
+	public ModelAndView userRegister(HttpServletRequest request) {
 		ModelAndView model = new ModelAndView("index");
-		StudentTo sto = new StudentTo();
+		/*StudentTo sto = new StudentTo();
 		// Adding one Student
-		WeekdayStudent weekdayStudent = new WeekdayStudent("Manish",
-				"BLR", "4.30PM", "Guitar", "MCA");
+		WeekdayStudent weekdayStudent = new WeekdayStudent("Manish", "BLR",
+				"4.30PM", "Guitar", "MCA");
 
 		sto.setWeekdayStudent(weekdayStudent);
-		studentService.addStudent(sto);
+		studentService.addStudent(sto);*/
+		
+		
+		String name = null;
+		String email = null;
+		String reEmail = null;
+		String mobile = null;
+		String[] courseType = null;
+		String batchType = null;
+		name = request.getParameter("userName");
+		email = request.getParameter("userEmail");
+		reEmail = request.getParameter("confirmEmail");
+		mobile = request.getParameter("mobileNumber");
+		courseType = request.getParameterValues("courseType");
+		batchType = request.getParameter("batchType");
+
+		System.out.println("name" + name + "email = " + email + "reEmail = "
+				+ reEmail + "mobile = " + mobile + "course Type = "
+				+ Arrays.toString(courseType) + "batch type = " + batchType);
+
 		return model;
 	}
 
