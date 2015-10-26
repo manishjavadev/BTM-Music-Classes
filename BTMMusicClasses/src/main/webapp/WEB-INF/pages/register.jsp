@@ -1,20 +1,16 @@
 
 <div class="container">
 
-	<!-- <div class="page-header">
-		<h1>
-			<small> Registration form BTM Music Class</small>
-		</h1>
-	</div> -->
 	<br />
 	<!-- Registration form - START -->
 	<div class="container">
 		<div class="row">
+
 			<form role="form" action="register.htm" method="post">
 				<div class="col-lg-6">
 					<div class="well well-sm">
-						<strong><span class="glyphicon glyphicon-asterisk"></span>Required
-							Field</strong>
+						<strong><span class="glyphicon glyphicon-asterisk">Required
+							Field</span></strong>
 					</div>
 					<div class="form-group">
 						<label for="userName">Enter Name</label>
@@ -44,6 +40,15 @@
 						</div>
 					</div>
 					<div class="form-group">
+						<label for="confirmEmail">Mobile Number</label>
+						<div class="input-group">
+							<input type="number" class="form-control" id="mobileNumber"
+								min="0" max="9" name="mobileNumber" placeholder="Mobile Number"
+								required> <span class="input-group-addon"><span
+								class="glyphicon glyphicon-asterisk"></span></span>
+						</div>
+					</div>
+					<div class="form-group">
 						<label for="confirmEmail">Course Type</label>
 						<div class="input-group">
 							<label class="checkbox-inline"><input type="checkbox"
@@ -62,55 +67,25 @@
 							</label>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="well well-sm">
-						<strong><span class="glyphicon glyphicon success"></span>Enter Address Detail</strong>
-					</div>
-					<div class="form-group">
-						<label for="userName">Address Line1</label>
-						<div class="input-group">
-							<input type="text" class="form-control" name="addressLine1"
-								id="addressLine1" placeholder="Address Line1" required>
-							<span class="input-group-addon"><span
-								class="glyphicon glyphicon-asterisk"></span></span>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="userName">Address Line2</label>
-						<div class="input-group">
-							<input type="text" class="form-control" name="addressLine2"
-								id="addressLine2" placeholder="Address Line2" required>
-							<span class="input-group-addon"><span
-								class="glyphicon glyphicon-asterisk"></span></span>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="userName">City</label>
-						<div class="input-group">
-							<input type="text" class="form-control" name="city"
-								id="city" placeholder="City" required> <span
-								class="input-group-addon"><span
-								class="glyphicon glyphicon-asterisk"></span></span>
-						</div>
-					</div>
-					<div class="form-group">
-						<label for="userName">Pin</label>
-						<div class="input-group">
-							<input type="text" class="form-control" name="pin"
-								id="pin" placeholder="Pin" required> <span
-								class="input-group-addon"><span
-								class="glyphicon glyphicon-asterisk"></span></span>
-						</div>
-					</div>
-				</div>
-				<div>
-					<input type="submit" name="submit" id="submit" value="Submit"
-						class="btn btn-info pull-right">
+					<div>
+						<input type="submit" name="submit" id="submit" value="Submit"
+							class="btn btn-info pull-center"> <input type="reset"
+							name="reset" id="reset" value="Reset"
+							class="btn btn-info pull-center">
 
+					</div>
 				</div>
-
 			</form>
+
+			<!-- Image -->
+			<div class="col-sm-6 hidden-xs animation animated-item-4">
+				<div class="slider-img">
+					<img src="images/slider/img1.png" class="img-responsive">
+				</div>
+			</div>
+
+
+
 
 		</div>
 	</div>

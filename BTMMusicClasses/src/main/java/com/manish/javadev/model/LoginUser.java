@@ -22,8 +22,7 @@ public class LoginUser implements Serializable {
 	private String email;
 	private String pass;
 	private String userType;
-	private User user;
-
+	
 	public LoginUser() {
 		super();
 	}
@@ -74,14 +73,6 @@ public class LoginUser implements Serializable {
 		this.userType = userType;
 	}
 
-	@OneToOne(fetch = FetchType.LAZY)
-	@PrimaryKeyJoinColumn
-	public User getUser() {
-		return user;
-	}
-
-	public void setUser(User user) {
-		this.user = user;
-	}
+	
 
 }
