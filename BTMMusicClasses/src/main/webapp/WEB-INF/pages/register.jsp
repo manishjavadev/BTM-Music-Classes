@@ -4,8 +4,12 @@
 	<br />
 	<!-- Registration form - START -->
 	<div class="container">
+		<div class="center wow fadeInDown">
+			<h2>
+				<span style="color: #FF1493"><em>BTM Music Class Registration</em></span>
+			</h2>
+		</div>
 		<div class="row">
-
 			<form role="form" action="register.htm" method="post">
 				<div class="col-lg-6">
 					<div class="well well-sm">

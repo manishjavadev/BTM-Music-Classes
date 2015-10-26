@@ -1,14 +1,15 @@
 
 <div class="container">
 
-	<div class="page-header">
-		<h1>
-			<small>BTM Music Class</small>
-		</h1>
-	</div>
-
+	<br />
 	<!-- Registration form - START -->
 	<div class="container">
+		<div class="center wow fadeInDown">
+			<h2>
+				<span style="color: #FF1493"><em>BTM Music Class
+					Login</em></span>
+			</h2>
+		</div>
 		<div class="row">
 			<form role="form" action="login.htm" method="post">
 				<div class="col-lg-6">
@@ -36,28 +37,20 @@
 					</div>
 
 					<input type="submit" name="submit" id="submit" value="Login"
-						class="btn btn-info pull-right">
+						class="btn btn-info">
 				</div>
 			</form>
-			<div class="col-lg-5 col-md-push-1">
-				<div class="col-md-12">
-					<div class="alert alert-success">
-						<strong><span class="glyphicon glyphicon-ok"></span>
-							Success! Message sent.</strong>
-					</div>
-					<div class="alert alert-danger">
-						<span class="glyphicon glyphicon-remove"></span><strong>
-							Error! Please check all page inputs.</strong>
-					</div>
+			<div class="col-sm-6">
+				<div class="slider-img">
+					<img src="images/slider/Guitar.jpg" class="img-responsive">
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- Registration form - END -->
 </div>
+<!-- Registration form - END -->
 
 <br />
 <br />
 <br />
 <br />
-
