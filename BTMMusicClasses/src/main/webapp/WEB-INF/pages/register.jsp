@@ -77,9 +77,9 @@
 				</div>
 			</form>
 
-			<div class="col-sm-6 hidden-xs animation animated-item-4">
+			<div class="col-sm-6">
 				<div class="slider-img">
-					<img src="images/slider/img1.png" class="img-responsive">
+					<img src="images/slider/Guitar.jpg" class="img-responsive">
 				</div>
 			</div>
 
