@@ -10,7 +10,7 @@
 				<div class="col-lg-6">
 					<div class="well well-sm">
 						<strong><span class="glyphicon glyphicon-asterisk">Required
-							Field</span></strong>
+								Field</span></strong>
 					</div>
 					<div class="form-group">
 						<label for="userName">Enter Name</label>
@@ -77,12 +77,13 @@
 				</div>
 			</form>
 
-			<!-- Image -->
 			<div class="col-sm-6 hidden-xs animation animated-item-4">
 				<div class="slider-img">
 					<img src="images/slider/img1.png" class="img-responsive">
 				</div>
 			</div>
+
+
 
 
 
