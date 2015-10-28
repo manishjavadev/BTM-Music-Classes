@@ -47,9 +47,9 @@
 					<div class="form-group">
 						<label for="confirmEmail">Mobile Number</label>
 						<div class="input-group">
-							<input type="number" class="form-control" id="mobileNumber"
-								min="0" max="9" name="mobileNumber" placeholder="Mobile Number"
-								required> <span class="input-group-addon"><span
+							<input type="text" class="form-control" id="mobileNumber"
+								name="mobileNumber" placeholder="Mobile Number" required>
+							<span class="input-group-addon"><span
 								class="glyphicon glyphicon-asterisk"></span></span>
 						</div>
 					</div>
@@ -57,9 +57,10 @@
 						<label for="confirmEmail">Course Type</label>
 						<div class="input-group">
 							<label class="checkbox-inline"><input type="checkbox"
-								value="" name="courseType">Guitar</label> <label class="checkbox-inline"><input
-								type="checkbox" value="" name="courseType">Violin</label> <label
-								class="checkbox-inline"><input type="checkbox" value="" name="courseType">Piano</label>
+								value="Guitar" name="courseType">Guitar</label>
+								 <label class="checkbox-inline"><input
+								type="checkbox" value="Violin" name="courseType">Violin</label> <label
+								class="checkbox-inline"><input type="checkbox" value="Piano" name="courseType">Piano</label>
 						</div>
 					</div>
 					<div class="form-group">

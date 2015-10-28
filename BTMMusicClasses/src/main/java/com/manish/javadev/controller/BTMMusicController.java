@@ -11,10 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.manish.javadev.model.Student;
-import com.manish.javadev.model.WeekdayStudent;
 import com.manish.javadev.service.StudentService;
-import com.manish.javadev.to.StudentTo;
 import com.manish.javadev.to.UserTo;
 
 @Controller
@@ -96,24 +93,7 @@ public class BTMMusicController {
 	}
 
 	@RequestMapping(value = "/register.htm", method = RequestMethod.GET)
-	public ModelAndView registerUser(HttpServletRequest request) {
-		String name = null;
-		String email = null;
-		String reEmail = null;
-		String mobile = null;
-		String[] courseType = null;
-		String batchType = null;
-		name = request.getParameter("userName");
-		email = request.getParameter("userEmail");
-		reEmail = request.getParameter("confirmEmail");
-		mobile = request.getParameter("mobileNumber");
-		courseType = request.getParameterValues("courseType");
-		batchType = request.getParameter("batchType");
-
-		System.out.println("name" + name + "email = " + email + "reEmail = "
-				+ reEmail + "mobile = " + mobile + "course Type = "
-				+ Arrays.toString(courseType) + "batch type = " + batchType);
-
+	public ModelAndView registerUser() {
 		ModelAndView model = new ModelAndView("registerHelper");
 		return model;
 
@@ -146,15 +126,15 @@ public class BTMMusicController {
 	@RequestMapping(value = "/register.htm", method = RequestMethod.POST)
 	public ModelAndView userRegister(HttpServletRequest request) {
 		ModelAndView model = new ModelAndView("index");
-		/*StudentTo sto = new StudentTo();
-		// Adding one Student
-		WeekdayStudent weekdayStudent = new WeekdayStudent("Manish", "BLR",
-				"4.30PM", "Guitar", "MCA");
+		/*
+		 * StudentTo sto = new StudentTo(); // Adding one Student WeekdayStudent
+		 * weekdayStudent = new WeekdayStudent("Manish", "BLR", "4.30PM",
+		 * "Guitar", "MCA");
+		 * 
+		 * sto.setWeekdayStudent(weekdayStudent);
+		 * studentService.addStudent(sto);
+		 */
 
-		sto.setWeekdayStudent(weekdayStudent);
-		studentService.addStudent(sto);*/
-		
-		
 		String name = null;
 		String email = null;
 		String reEmail = null;
@@ -168,7 +148,7 @@ public class BTMMusicController {
 		courseType = request.getParameterValues("courseType");
 		batchType = request.getParameter("batchType");
 
-		System.out.println("name" + name + "email = " + email + "reEmail = "
+		System.out.println("name =  " + name + "email = " + email + "reEmail = "
 				+ reEmail + "mobile = " + mobile + "course Type = "
 				+ Arrays.toString(courseType) + "batch type = " + batchType);
 
